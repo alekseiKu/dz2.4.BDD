@@ -19,9 +19,9 @@ public class TransferPage {
 
     public DashboardPage transferForm(String sum, DataHelper.CardInfo cardInfo) {
 
-        $("[data-test-id=\"amount\"] input").setValue(sum);
-        $("[data-test-id=\"from\"] input").setValue(cardInfo.getCardNumber());
-        $("[data-test-id=\"action-transfer\"]").click();
+        $("[data-test-id=amount] input").setValue(sum);
+        $("[data-test-id=from] input").setValue(cardInfo.getCardNumber());
+        $("[data-test-id=action-transfer]").click();
         return new DashboardPage();
 
     }
